@@ -20,6 +20,9 @@
 		08A78921297D3F4000C0DAF3 /* employees.json in Resources */ = {isa = PBXBuildFile; fileRef = 08A7891D297D3F4000C0DAF3 /* employees.json */; };
 		08A78922297D3F4000C0DAF3 /* single_employee.json in Resources */ = {isa = PBXBuildFile; fileRef = 08A7891E297D3F4000C0DAF3 /* single_employee.json */; };
 		08A78923297D3F4000C0DAF3 /* employees_malformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 08A7891F297D3F4000C0DAF3 /* employees_malformed.json */; };
+		08A78925297DCC0F00C0DAF3 /* EmployeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78924297DCC0F00C0DAF3 /* EmployeeTests.swift */; };
+		08A78928297DCC8700C0DAF3 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78927297DCC8700C0DAF3 /* Employee.swift */; };
+		08A7892A297DCCD800C0DAF3 /* Bundle+TakeHomeSimpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78929297DCCD800C0DAF3 /* Bundle+TakeHomeSimpleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		08A7891D297D3F4000C0DAF3 /* employees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employees.json; sourceTree = "<group>"; };
 		08A7891E297D3F4000C0DAF3 /* single_employee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = single_employee.json; sourceTree = "<group>"; };
 		08A7891F297D3F4000C0DAF3 /* employees_malformed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employees_malformed.json; sourceTree = "<group>"; };
+		08A78924297DCC0F00C0DAF3 /* EmployeeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeTests.swift; sourceTree = "<group>"; };
+		08A78927297DCC8700C0DAF3 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		08A78929297DCCD800C0DAF3 /* Bundle+TakeHomeSimpleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+TakeHomeSimpleTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		08A788EB297D329800C0DAF3 /* TakeHomeSimple */ = {
 			isa = PBXGroup;
 			children = (
+				08A78926297DCC6300C0DAF3 /* Model */,
 				08A788EC297D329800C0DAF3 /* TakeHomeSimpleAppDelegate.swift */,
 				08A788EE297D329800C0DAF3 /* SceneDelegate.swift */,
 				08A788F0297D329800C0DAF3 /* ViewController.swift */,
@@ -121,9 +128,11 @@
 		08A78902297D329900C0DAF3 /* TakeHomeSimpleTests */ = {
 			isa = PBXGroup;
 			children = (
+				08A78929297DCCD800C0DAF3 /* Bundle+TakeHomeSimpleTests.swift */,
 				08A7891C297D3F4000C0DAF3 /* employees_empty.json */,
 				08A7891F297D3F4000C0DAF3 /* employees_malformed.json */,
 				08A7891D297D3F4000C0DAF3 /* employees.json */,
+				08A78924297DCC0F00C0DAF3 /* EmployeeTests.swift */,
 				08A7891E297D3F4000C0DAF3 /* single_employee.json */,
 				08A78903297D329900C0DAF3 /* TakeHomeSimpleTests.swift */,
 			);
@@ -137,6 +146,14 @@
 				08A7890F297D329900C0DAF3 /* TakeHomeSimpleUITestsLaunchTests.swift */,
 			);
 			path = TakeHomeSimpleUITests;
+			sourceTree = "<group>";
+		};
+		08A78926297DCC6300C0DAF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08A78927297DCC8700C0DAF3 /* Employee.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A788F1297D329800C0DAF3 /* ViewController.swift in Sources */,
+				08A78928297DCC8700C0DAF3 /* Employee.swift in Sources */,
 				08A788ED297D329800C0DAF3 /* TakeHomeSimpleAppDelegate.swift in Sources */,
 				08A788EF297D329800C0DAF3 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,7 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A7892A297DCCD800C0DAF3 /* Bundle+TakeHomeSimpleTests.swift in Sources */,
 				08A78904297D329900C0DAF3 /* TakeHomeSimpleTests.swift in Sources */,
+				08A78925297DCC0F00C0DAF3 /* EmployeeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
