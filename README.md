@@ -37,11 +37,13 @@ The project description made it clear that a best possible effort wasn't the goa
 implementation took that to heart, taking care of the basics and building no more than the requested functionality but
 in a way that would make further build up work easy to get on.
 
-The "backend" in this case was a set of URLs that returned a plain JSON file. I included them in the project as assets
-for unit testing data decoding, but company-identifying information has been removed.
+The project aim was to build a dummy "employee directory" based on data fetched from a backend. The "backend" in this
+case was a set of URLs that returned a plain JSON file. I included those files —there were several samples— in the
+project as assets for unit testing data decoding, but company-identifying information has been removed.
 
 Company-identifying information has also been removed from the URLs in the app. As a result the app can be built but
-will not work as is.
+will not work as is. Search and replace for `<private>` to find the places where you would need to fill in the real
+information.
 
 The recruitment process requested a questionnaire be filled up and returned with the take home project. It has been
 included here as "Questionnaire.md"
