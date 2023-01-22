@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  TakeHomeSimpleAppDelegate.swift
 //  TakeHomeSimple
 //
 //  Created by Óscar Morales Vivó on 1/22/23.
@@ -8,7 +8,7 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class TakeHomeSimpleAppDelegate: UIResponder, UIApplicationDelegate {
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         true

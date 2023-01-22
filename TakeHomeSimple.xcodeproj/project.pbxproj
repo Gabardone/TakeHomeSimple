@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08A788ED297D329800C0DAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A788EC297D329800C0DAF3 /* AppDelegate.swift */; };
+		08A788ED297D329800C0DAF3 /* TakeHomeSimpleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A788EC297D329800C0DAF3 /* TakeHomeSimpleAppDelegate.swift */; };
 		08A788EF297D329800C0DAF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A788EE297D329800C0DAF3 /* SceneDelegate.swift */; };
 		08A788F1297D329800C0DAF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A788F0297D329800C0DAF3 /* ViewController.swift */; };
 		08A788F4297D329800C0DAF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A788F2297D329800C0DAF3 /* Main.storyboard */; };
@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		08A788E9297D329800C0DAF3 /* TakeHomeSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		08A788EC297D329800C0DAF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08A788EC297D329800C0DAF3 /* TakeHomeSimpleAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeSimpleAppDelegate.swift; sourceTree = "<group>"; };
 		08A788EE297D329800C0DAF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		08A788F0297D329800C0DAF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08A788F3297D329800C0DAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		08A788EB297D329800C0DAF3 /* TakeHomeSimple */ = {
 			isa = PBXGroup;
 			children = (
-				08A788EC297D329800C0DAF3 /* AppDelegate.swift */,
+				08A788EC297D329800C0DAF3 /* TakeHomeSimpleAppDelegate.swift */,
 				08A788EE297D329800C0DAF3 /* SceneDelegate.swift */,
 				08A788F0297D329800C0DAF3 /* ViewController.swift */,
 				08A788F2297D329800C0DAF3 /* Main.storyboard */,
@@ -275,7 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A788F1297D329800C0DAF3 /* ViewController.swift in Sources */,
-				08A788ED297D329800C0DAF3 /* AppDelegate.swift in Sources */,
+				08A788ED297D329800C0DAF3 /* TakeHomeSimpleAppDelegate.swift in Sources */,
 				08A788EF297D329800C0DAF3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
