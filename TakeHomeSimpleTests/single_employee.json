@@ -1,0 +1,14 @@
+{
+    "uuid" : "0d8fcc12-4d0c-425c-8355-390b312b909c",
+
+    "full_name" : "Justine Mason",
+    "phone_number" : "5553280123",
+    "email_address" : "jmason.demo@<private>.com",
+    "biography" : "Engineer on that team.",
+
+    "photo_url_small" : "https://<private>/16c00560-6dd3-4af4-97a6-d4754e7f2394/small.jpg",
+    "photo_url_large" : "https://<private>/16c00560-6dd3-4af4-97a6-d4754e7f2394/large.jpg",
+
+    "team" : "That Team",
+    "employee_type" : "FULL_TIME"
+}

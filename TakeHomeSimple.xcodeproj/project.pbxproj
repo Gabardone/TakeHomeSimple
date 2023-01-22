@@ -16,6 +16,10 @@
 		08A78904297D329900C0DAF3 /* TakeHomeSimpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78903297D329900C0DAF3 /* TakeHomeSimpleTests.swift */; };
 		08A7890E297D329900C0DAF3 /* TakeHomeSimpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7890D297D329900C0DAF3 /* TakeHomeSimpleUITests.swift */; };
 		08A78910297D329900C0DAF3 /* TakeHomeSimpleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7890F297D329900C0DAF3 /* TakeHomeSimpleUITestsLaunchTests.swift */; };
+		08A78920297D3F4000C0DAF3 /* employees_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 08A7891C297D3F4000C0DAF3 /* employees_empty.json */; };
+		08A78921297D3F4000C0DAF3 /* employees.json in Resources */ = {isa = PBXBuildFile; fileRef = 08A7891D297D3F4000C0DAF3 /* employees.json */; };
+		08A78922297D3F4000C0DAF3 /* single_employee.json in Resources */ = {isa = PBXBuildFile; fileRef = 08A7891E297D3F4000C0DAF3 /* single_employee.json */; };
+		08A78923297D3F4000C0DAF3 /* employees_malformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 08A7891F297D3F4000C0DAF3 /* employees_malformed.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		08A78909297D329900C0DAF3 /* TakeHomeSimpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeSimpleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A7890D297D329900C0DAF3 /* TakeHomeSimpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeSimpleUITests.swift; sourceTree = "<group>"; };
 		08A7890F297D329900C0DAF3 /* TakeHomeSimpleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeSimpleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08A7891C297D3F4000C0DAF3 /* employees_empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employees_empty.json; sourceTree = "<group>"; };
+		08A7891D297D3F4000C0DAF3 /* employees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employees.json; sourceTree = "<group>"; };
+		08A7891E297D3F4000C0DAF3 /* single_employee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = single_employee.json; sourceTree = "<group>"; };
+		08A7891F297D3F4000C0DAF3 /* employees_malformed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employees_malformed.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,10 @@
 		08A78902297D329900C0DAF3 /* TakeHomeSimpleTests */ = {
 			isa = PBXGroup;
 			children = (
+				08A7891C297D3F4000C0DAF3 /* employees_empty.json */,
+				08A7891F297D3F4000C0DAF3 /* employees_malformed.json */,
+				08A7891D297D3F4000C0DAF3 /* employees.json */,
+				08A7891E297D3F4000C0DAF3 /* single_employee.json */,
 				08A78903297D329900C0DAF3 /* TakeHomeSimpleTests.swift */,
 			);
 			path = TakeHomeSimpleTests;
@@ -241,6 +253,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A78920297D3F4000C0DAF3 /* employees_empty.json in Resources */,
+				08A78923297D3F4000C0DAF3 /* employees_malformed.json in Resources */,
+				08A78921297D3F4000C0DAF3 /* employees.json in Resources */,
+				08A78922297D3F4000C0DAF3 /* single_employee.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
