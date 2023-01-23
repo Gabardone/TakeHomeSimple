@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Endpoint Picker View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TakeHomeSquare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EndpointPickerViewController" customModule="TakeHomeSimple" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,16 +32,25 @@ Project</string>
                                         <rect key="frame" x="100.00000000000001" y="162.66666666666669" width="193.33333333333337" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Fetch Sample Data"/>
+                                        <connections>
+                                            <action selector="fetchSampleData" destination="BYZ-38-t0r" eventType="touchUpInside" id="zL1-GV-VH5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yk-PD-7AJ">
                                         <rect key="frame" x="100.00000000000001" y="209" width="193.33333333333337" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Fetch Malformed Data"/>
+                                        <connections>
+                                            <action selector="fetchMalformedData" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cwu-2J-lWD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWr-nB-aGz">
                                         <rect key="frame" x="100.00000000000001" y="255.33333333333334" width="193.33333333333337" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Fetch Empty List"/>
+                                        <connections>
+                                            <action selector="fetchEmptyData" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ed7-mS-cXm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
