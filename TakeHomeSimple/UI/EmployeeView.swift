@@ -31,7 +31,7 @@ struct EmployeeView: View {
      it as a `@State` property allows us to update the UI as it arrives.
      */
     @State
-    private var image: UIImage? = nil
+    private var image: UIImage?
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -107,7 +107,7 @@ struct EmployeeView_Previews: PreviewProvider {
             fullName: "John Mastodon",
             phoneNumber: "5551234567",
             emailAddress: "john@mastodon.org",
-            biography: "The One and Only, the coolest the strongest the manliest the queerest, the Ballad of John Mastodon",
+            biography: "The coolest the strongest the manliest the queerest, the Ballad of John Mastodon",
             thumbnailURL: dummyURL,
             photoURL: dummyURL,
             team: "Super Awesome",
@@ -124,13 +124,15 @@ struct EmployeeView_Previews: PreviewProvider {
                 x: imageSize.width / 8.0,
                 y: imageSize.height / 8.0,
                 width: imageSize.width / 4.0,
-                height: imageSize.height / 4.0)
+                height: imageSize.height / 4.0
+            )
             ).fill()
             UIBezierPath(ovalIn: .init(
                 x: (imageSize.width * 5.0) / 8.0,
                 y: (imageSize.height * 5.0) / 8.0,
                 width: imageSize.width / 4.0,
-                height: imageSize.height / 4.0)
+                height: imageSize.height / 4.0
+            )
             ).fill()
         }
 

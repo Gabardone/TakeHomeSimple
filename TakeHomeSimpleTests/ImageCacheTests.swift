@@ -20,20 +20,20 @@ final class ImageCacheTests: XCTestCase {
                 x: imageSize.width / 8.0,
                 y: imageSize.height / 8.0,
                 width: imageSize.width / 4.0,
-                height: imageSize.height / 4.0)
+                height: imageSize.height / 4.0
+            )
             ).fill()
             UIBezierPath(ovalIn: .init(
                 x: (imageSize.width * 5.0) / 8.0,
                 y: (imageSize.height * 5.0) / 8.0,
                 width: imageSize.width / 4.0,
-                height: imageSize.height / 4.0)
+                height: imageSize.height / 4.0
+            )
             ).fill()
         }
     }()
 
-    private static let sampleImageData: Data = {
-        return sampleImage.pngData()!
-    }()
+    private static let sampleImageData: Data = sampleImage.pngData()!
 
     private static let badImageData = Data(count: 16)
 
@@ -75,7 +75,7 @@ final class ImageCacheTests: XCTestCase {
         let mockImageDataProvider = MockImageDataProvider { _ in
             remoteDataExpectation.fulfill()
             return Self.sampleImageData
-        } localDataOverride: { url in
+        } localDataOverride: { _ in
             localDataExpectation.fulfill()
             throw DummyError()
         } storeLocallyOverride: { _, _ in
@@ -104,7 +104,7 @@ final class ImageCacheTests: XCTestCase {
         let mockImageDataProvider = MockImageDataProvider { _ in
             remoteDataExpectation.fulfill()
             return Self.sampleImageData
-        } localDataOverride: { url in
+        } localDataOverride: { _ in
             localDataExpectation.fulfill()
             return Self.badImageData
         } storeLocallyOverride: { _, _ in
@@ -133,7 +133,7 @@ final class ImageCacheTests: XCTestCase {
         let mockImageDataProvider = MockImageDataProvider { _ in
             remoteDataExpectation.fulfill()
             return Self.badImageData
-        } localDataOverride: { url in
+        } localDataOverride: { _ in
             localDataExpectation.fulfill()
             throw LocalDummyError()
         } storeLocallyOverride: { _, _ in

@@ -12,7 +12,6 @@
 		08A788F4297D329800C0DAF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A788F2297D329800C0DAF3 /* Main.storyboard */; };
 		08A788F6297D329900C0DAF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A788F5297D329900C0DAF3 /* Assets.xcassets */; };
 		08A788F9297D329900C0DAF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A788F7297D329900C0DAF3 /* LaunchScreen.storyboard */; };
-		08A78904297D329900C0DAF3 /* TakeHomeSimpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78903297D329900C0DAF3 /* TakeHomeSimpleTests.swift */; };
 		08A7890E297D329900C0DAF3 /* TakeHomeSimpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7890D297D329900C0DAF3 /* TakeHomeSimpleUITests.swift */; };
 		08A78910297D329900C0DAF3 /* TakeHomeSimpleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7890F297D329900C0DAF3 /* TakeHomeSimpleUITestsLaunchTests.swift */; };
 		08A78920297D3F4000C0DAF3 /* employees_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 08A7891C297D3F4000C0DAF3 /* employees_empty.json */; };
@@ -62,7 +61,6 @@
 		08A788F8297D329900C0DAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08A788FA297D329900C0DAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08A788FF297D329900C0DAF3 /* TakeHomeSimpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeSimpleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		08A78903297D329900C0DAF3 /* TakeHomeSimpleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeSimpleTests.swift; sourceTree = "<group>"; };
 		08A78909297D329900C0DAF3 /* TakeHomeSimpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeSimpleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A7890D297D329900C0DAF3 /* TakeHomeSimpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeSimpleUITests.swift; sourceTree = "<group>"; };
 		08A7890F297D329900C0DAF3 /* TakeHomeSimpleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeSimpleUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 				08A7892F297E0DC300C0DAF3 /* FetchViewControllerTests.swift */,
 				08A78943297E18D300C0DAF3 /* ImageCacheTests.swift */,
 				08A7891E297D3F4000C0DAF3 /* single_employee.json */,
-				08A78903297D329900C0DAF3 /* TakeHomeSimpleTests.swift */,
 			);
 			path = TakeHomeSimpleTests;
 			sourceTree = "<group>";
@@ -361,7 +358,6 @@
 			files = (
 				08A7892A297DCCD800C0DAF3 /* Bundle+TakeHomeSimpleTests.swift in Sources */,
 				08A7892E297E0C0100C0DAF3 /* EmployeeListTests.swift in Sources */,
-				08A78904297D329900C0DAF3 /* TakeHomeSimpleTests.swift in Sources */,
 				08A78925297DCC0F00C0DAF3 /* EmployeeTests.swift in Sources */,
 				08A78944297E18D300C0DAF3 /* ImageCacheTests.swift in Sources */,
 				08A78930297E0DC300C0DAF3 /* FetchViewControllerTests.swift in Sources */,

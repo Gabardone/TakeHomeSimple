@@ -7,16 +7,17 @@
 
 import UIKit
 
-class EndpointPickerViewController: UIViewController {
-}
+class EndpointPickerViewController: UIViewController {}
 
 // MARK: - Data Fetch
 
 extension EndpointPickerViewController {
+    /**
+     - Todo: Abstract away `URLSession` for testability.
+     */
     private func fetchData(sourceURL: URL) {
         // Build a `Task` that we'll use to `await` the results in the loading view controller
         let fetchViewController = FetchViewController {
-            // TODO: Abstract away `URLSession` for testability.
             let (data, _) = try await URLSession.shared.data(from: sourceURL)
 
             // If you're on a good network, you won't have time to see the loading UI unless you add a delay here.
@@ -57,4 +58,3 @@ extension EndpointPickerViewController {
         fetchData(sourceURL: Self.emptyDataURL)
     }
 }
-

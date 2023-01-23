@@ -80,7 +80,7 @@ extension Employee {
         case fullName = "full_name"
         case phoneNumber = "phone_number"
         case emailAddress = "email_address"
-        case biography = "biography"
+        case biography
         case thumbnailURL = "photo_url_small"
         case photoURL = "photo_url_large"
         case team
@@ -92,7 +92,11 @@ extension Employee: Decodable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         guard let uuid = UUID(uuidString: try values.decode(String.self, forKey: .id)) else {
-            throw DecodingError.dataCorruptedError(forKey: .id, in: values, debugDescription: "Could not build UUID from JSON `uuid` data")
+            throw DecodingError.dataCorruptedError(
+                forKey: .id,
+                in: values,
+                debugDescription: "Could not build UUID from JSON `uuid` data"
+            )
         }
         self.id = uuid
         // Should we just be forgiving and use `try?` for optional values?
@@ -106,10 +110,14 @@ extension Employee: Decodable {
         self.category = try values.decode(Category.self, forKey: .category)
     }
 
-    static private func decodeURL(from container: KeyedDecodingContainer<CodingKeys>, key: CodingKeys) throws -> URL? {
+    private static func decodeURL(from container: KeyedDecodingContainer<CodingKeys>, key: CodingKeys) throws -> URL? {
         try container.decode(String?.self, forKey: key).map { urlString in
             guard let thumbnailURL = URL(string: urlString) else {
-                throw DecodingError.dataCorruptedError(forKey: .thumbnailURL, in: container, debugDescription: "Thumbnail URL string found not a valid URL")
+                throw DecodingError.dataCorruptedError(
+                    forKey: .thumbnailURL,
+                    in: container,
+                    debugDescription: "Thumbnail URL string found not a valid URL"
+                )
             }
 
             return thumbnailURL

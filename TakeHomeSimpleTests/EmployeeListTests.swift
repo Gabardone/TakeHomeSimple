@@ -41,7 +41,10 @@ final class EmployeeListTests: XCTestCase {
 
     func testEncodeDecode() throws {
         let decoder = JSONDecoder()
-        let singleEmployee = try decoder.decode(Employee.self, from: Bundle.dataForTestJSONResource(named: Bundle.singleEmployee))
+        let singleEmployee = try decoder.decode(
+            Employee.self,
+            from: Bundle.dataForTestJSONResource(named: Bundle.singleEmployee)
+        )
         let employeeList = EmployeeList(employees: [singleEmployee])
 
         let encoder = JSONEncoder()

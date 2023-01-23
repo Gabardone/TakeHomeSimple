@@ -6,8 +6,8 @@
 //
 
 import os
-import UIKit
 import SwiftUI
+import UIKit
 
 /**
  A simple view controller that manages display of a progress indicator during data load, or an error label if it
@@ -59,7 +59,7 @@ class FetchViewController: UIViewController {
     }
 
     @available(*, unavailable)
-    required init?(coder: NSCoder) {
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -96,11 +96,11 @@ extension FetchViewController {
     private func updateLoadingState(fromState: LoadState, toState: LoadState) {
         // Can't declare `LoadState` equatable due to `Error` not complying with `Equatable`.
         switch (fromState, toState) {
-        case (.loading, .error(let newError)):
+        case let (.loading, .error(newError)):
             // Show up the error UI.
             setupErrorDisplay(error: newError)
 
-        case (.loading, .success(let data)):
+        case let (.loading, .success(data)):
             // Everything is awesome, show the content and go dormant.
             setupContent(employeeList: data)
             loadState = .done
@@ -142,7 +142,7 @@ extension FetchViewController {
 
 extension FetchViewController {
     private func setupLoadingIndicator() {
-        let loadingContainer = self.loadingContainer ?? {
+        let loadingContainer = loadingContainer ?? {
             // A simple label + loading indicator will do.
             let activityIndicator = UIActivityIndicatorView(style: .large)
             activityIndicator.startAnimating()
@@ -167,10 +167,12 @@ extension FetchViewController {
         contentViewController?.view.isHidden = true
     }
 
-    private func setupErrorDisplay(error: Error) {
-        let errorDisplay = self.errorDisplay ?? {
+    /**
+     - Todo: Actually show error.localizedDescription instead of a generic message.
+     */
+    private func setupErrorDisplay(error _: Error) {
+        let errorDisplay = errorDisplay ?? {
             let errorLabel = UILabel()
-            // TODO: Actually show error.localizedDescription instead of a generic message.
             errorLabel.text = "There was an error fetching the employee data."
             errorLabel.numberOfLines = 0
             errorLabel.lineBreakMode = .byWordWrapping

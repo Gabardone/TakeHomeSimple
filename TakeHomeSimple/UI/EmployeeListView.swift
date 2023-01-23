@@ -16,7 +16,6 @@ struct EmployeeListView: View {
 
     let refreshOperation: () async throws -> EmployeeList
 
-
     var body: some View {
         VStack {
             if employeeList.employees.isEmpty {
@@ -70,7 +69,7 @@ struct EmployeeListView_Previews: PreviewProvider {
             fullName: "John Mastodon",
             phoneNumber: "5551234567",
             emailAddress: "john@mastodon.org",
-            biography: "The One and Only, the coolest the strongest the manliest the queerest, the Ballad of John Mastodon",
+            biography: "The coolest the strongest the manliest the queerest, the Ballad of John Mastodon",
             team: "Super Awesome",
             category: .partTime
         )
@@ -80,7 +79,7 @@ struct EmployeeListView_Previews: PreviewProvider {
         case testError
 
         var localizedDescription: String {
-            return "Potato"
+            "Potato"
         }
     }
 

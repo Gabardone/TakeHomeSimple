@@ -18,7 +18,7 @@ struct DefaultImageDataProvider: ImageDataProvider {
     }
 
     func localData(imageURL: URL) throws -> Data {
-        return try Data(contentsOf: FileManager.default.localCacheURLFor(remoteImageURL: imageURL))
+        try Data(contentsOf: FileManager.default.localCacheURLFor(remoteImageURL: imageURL))
     }
 
     func storeLocally(data: Data, imageURL: URL) throws {
@@ -29,13 +29,13 @@ struct DefaultImageDataProvider: ImageDataProvider {
 
 private extension FileManager {
     func localCacheURLFor(remoteImageURL: URL) -> URL {
-        return temporaryDirectory.appending(component: remoteImageURL.storageIdentifier)
+        temporaryDirectory.appending(component: remoteImageURL.storageIdentifier)
     }
 }
 
 private extension URL {
     var storageIdentifier: String {
         // A bit of a blast form the past but if it works it works.
-        return (pathComponents.suffix(2) as NSArray).componentsJoined(by: "-")
+        (pathComponents.suffix(2) as NSArray).componentsJoined(by: "-")
     }
 }

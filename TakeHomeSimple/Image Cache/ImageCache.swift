@@ -55,7 +55,7 @@ actor ImageCache {
                 let image: UIImage
                 do {
                     // Let's just try to read the data from the file.
-                    let imageData = try imageDataProvider.localData(imageURL: imageURL)// Data(contentsOf: cachedFileURL)
+                    let imageData = try imageDataProvider.localData(imageURL: imageURL)
 
                     // Let's make sure we can still decode the image proper.
                     guard let decodedImage = UIImage(data: imageData) else {
@@ -98,7 +98,7 @@ actor ImageCache {
         return fetchTask
     }
 
-    /// Once again we're using the jankiest class in Foundation because it's the one officially supported weak dictionary.
+    /// Once again using the jankiest class in Foundation because it's the one officially supported weak dictionary.
     private let inMemoryImages = NSMapTable<NSURL, UIImage>.strongToWeakObjects()
 
     /**
