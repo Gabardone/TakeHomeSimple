@@ -33,6 +33,7 @@
 		08A7893F297E12F000C0DAF3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7893B297E12F000C0DAF3 /* ImageCache.swift */; };
 		08A78940297E12F000C0DAF3 /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7893C297E12F000C0DAF3 /* ImageDataProvider.swift */; };
 		08A78942297E180200C0DAF3 /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78941297E180200C0DAF3 /* EmployeeView.swift */; };
+		08A78944297E18D300C0DAF3 /* ImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78943297E18D300C0DAF3 /* ImageCacheTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		08A7893B297E12F000C0DAF3 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		08A7893C297E12F000C0DAF3 /* ImageDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataProvider.swift; sourceTree = "<group>"; };
 		08A78941297E180200C0DAF3 /* EmployeeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
+		08A78943297E18D300C0DAF3 /* ImageCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				08A7891D297D3F4000C0DAF3 /* employees.json */,
 				08A78924297DCC0F00C0DAF3 /* EmployeeTests.swift */,
 				08A7892F297E0DC300C0DAF3 /* FetchViewControllerTests.swift */,
+				08A78943297E18D300C0DAF3 /* ImageCacheTests.swift */,
 				08A7891E297D3F4000C0DAF3 /* single_employee.json */,
 				08A78903297D329900C0DAF3 /* TakeHomeSimpleTests.swift */,
 			);
@@ -360,6 +363,7 @@
 				08A7892E297E0C0100C0DAF3 /* EmployeeListTests.swift in Sources */,
 				08A78904297D329900C0DAF3 /* TakeHomeSimpleTests.swift in Sources */,
 				08A78925297DCC0F00C0DAF3 /* EmployeeTests.swift in Sources */,
+				08A78944297E18D300C0DAF3 /* ImageCacheTests.swift in Sources */,
 				08A78930297E0DC300C0DAF3 /* FetchViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
