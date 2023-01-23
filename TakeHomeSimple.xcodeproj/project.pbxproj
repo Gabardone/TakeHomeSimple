@@ -28,6 +28,10 @@
 		08A78934297E0E0300C0DAF3 /* EndpointPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78932297E0E0300C0DAF3 /* EndpointPickerViewController.swift */; };
 		08A78935297E0E0300C0DAF3 /* FetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78933297E0E0300C0DAF3 /* FetchViewController.swift */; };
 		08A78937297E11A300C0DAF3 /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78936297E11A300C0DAF3 /* EmployeeListView.swift */; };
+		08A7893D297E12F000C0DAF3 /* DefaultImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A78939297E12F000C0DAF3 /* DefaultImageDataProvider.swift */; };
+		08A7893E297E12F000C0DAF3 /* MockImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7893A297E12F000C0DAF3 /* MockImageDataProvider.swift */; };
+		08A7893F297E12F000C0DAF3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7893B297E12F000C0DAF3 /* ImageCache.swift */; };
+		08A78940297E12F000C0DAF3 /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7893C297E12F000C0DAF3 /* ImageDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		08A78932297E0E0300C0DAF3 /* EndpointPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointPickerViewController.swift; sourceTree = "<group>"; };
 		08A78933297E0E0300C0DAF3 /* FetchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchViewController.swift; sourceTree = "<group>"; };
 		08A78936297E11A300C0DAF3 /* EmployeeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
+		08A78939297E12F000C0DAF3 /* DefaultImageDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultImageDataProvider.swift; sourceTree = "<group>"; };
+		08A7893A297E12F000C0DAF3 /* MockImageDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockImageDataProvider.swift; sourceTree = "<group>"; };
+		08A7893B297E12F000C0DAF3 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		08A7893C297E12F000C0DAF3 /* ImageDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,7 @@
 		08A788EB297D329800C0DAF3 /* TakeHomeSimple */ = {
 			isa = PBXGroup;
 			children = (
+				08A78938297E12D500C0DAF3 /* Image Cache */,
 				08A78926297DCC6300C0DAF3 /* Model */,
 				08A78931297E0DE900C0DAF3 /* UI */,
 				08A788EC297D329800C0DAF3 /* TakeHomeSimpleAppDelegate.swift */,
@@ -177,6 +186,17 @@
 				08A78933297E0E0300C0DAF3 /* FetchViewController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		08A78938297E12D500C0DAF3 /* Image Cache */ = {
+			isa = PBXGroup;
+			children = (
+				08A78939297E12F000C0DAF3 /* DefaultImageDataProvider.swift */,
+				08A7893B297E12F000C0DAF3 /* ImageCache.swift */,
+				08A7893C297E12F000C0DAF3 /* ImageDataProvider.swift */,
+				08A7893A297E12F000C0DAF3 /* MockImageDataProvider.swift */,
+			);
+			path = "Image Cache";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,12 +334,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A7893F297E12F000C0DAF3 /* ImageCache.swift in Sources */,
 				08A78928297DCC8700C0DAF3 /* Employee.swift in Sources */,
 				08A78937297E11A300C0DAF3 /* EmployeeListView.swift in Sources */,
 				08A7892C297E0BCA00C0DAF3 /* EmployeeList.swift in Sources */,
+				08A78940297E12F000C0DAF3 /* ImageDataProvider.swift in Sources */,
+				08A7893E297E12F000C0DAF3 /* MockImageDataProvider.swift in Sources */,
 				08A788ED297D329800C0DAF3 /* TakeHomeSimpleAppDelegate.swift in Sources */,
 				08A788EF297D329800C0DAF3 /* SceneDelegate.swift in Sources */,
 				08A78934297E0E0300C0DAF3 /* EndpointPickerViewController.swift in Sources */,
+				08A7893D297E12F000C0DAF3 /* DefaultImageDataProvider.swift in Sources */,
 				08A78935297E0E0300C0DAF3 /* FetchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
