@@ -16,57 +16,42 @@ struct EmployeeListView: View {
 
     let refreshOperation: () async throws -> EmployeeList
 
-    struct EmployeeDataRow: View {
-        var label: String
-        var info: String
-        var font: Font = .caption
-
-        var body: some View {
-            GridRow {
-                Text(label)
-                    .gridCellAnchor(.trailing)
-                Text(info)
-                    .gridCellAnchor(.leading)
-            }
-            .font(font)
-        }
-    }
 
     var body: some View {
         VStack {
-            List {
-                ForEach(employeeList.employees) { employee in
-                    VStack(alignment: .leading) {
-                        Grid(horizontalSpacing: 4.0, verticalSpacing: 4.0) {
-                            EmployeeDataRow(label: "Full name:", info: employee.fullName, font: .body)
-                            if let phoneNumber = employee.phoneNumber {
-                                EmployeeDataRow(label: "Phone:", info: phoneNumber)
-                            }
-                            EmployeeDataRow(label: "Email:", info: employee.emailAddress)
-                            EmployeeDataRow(label: "Team:", info: employee.team)
-                            EmployeeDataRow(label: "Type:", info: employee.category.displayName.capitalized)
-                        }
-                        if let biography = employee.biography {
-                            Text(biography)
-                                .padding(.top, 1.0)
-                                .font(.footnote)
+            if employeeList.employees.isEmpty {
+                VStack(spacing: 8.0) {
+                    Text("This screen intentionally left blank.")
+                    Button("Refresh…") {
+                        Task {
+                            await refresh()
                         }
                     }
                 }
-            }
-            .refreshable {
-                do {
-                    refreshError = false
-                    let employeeList = try await refreshOperation()
-                    self.employeeList = employeeList
-                } catch {
-                    refreshError = true
+            } else {
+                List {
+                    ForEach(employeeList.employees) { employee in
+                        EmployeeView(employee: employee)
+                    }
+                }
+                .refreshable {
+                    await refresh()
                 }
             }
             if refreshError {
                 Text("Error refreshing employee list")
                     .foregroundColor(.red)
             }
+        }
+    }
+
+    private func refresh() async {
+        do {
+            refreshError = false
+            let employeeList = try await refreshOperation()
+            self.employeeList = employeeList
+        } catch {
+            refreshError = true
         }
     }
 }
