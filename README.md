@@ -41,6 +41,9 @@ The project aim was to build a dummy "employee directory" based on data fetched 
 case was a set of URLs that returned a plain JSON file. I included those files —there were several samples— in the
 project as assets for unit testing data decoding, but company-identifying information has been removed.
 
+Project specs insisted on making sure image downloading was optimized away through an image cache. The one built for
+this project has been reused later in other personal projects with some improvements for flexibility in use.
+
 Company-identifying information has also been removed from the URLs in the app. As a result the app can be built but
 will not work as is. Search and replace for `<private>` to find the places where you would need to fill in the real
 information.
