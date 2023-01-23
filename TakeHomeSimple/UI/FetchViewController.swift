@@ -202,7 +202,10 @@ extension FetchViewController {
 
     private func setupContent(employeeList: EmployeeList) {
         let contentViewController = contentViewController ?? {
-            let contentViewController = UIViewController()
+            let contentViewController = UIHostingController(rootView: EmployeeListView(
+                employeeList: employeeList,
+                refreshOperation: fetchOperation
+            ))
 
             let contentView = contentViewController.view!
             contentView.translatesAutoresizingMaskIntoConstraints = false
